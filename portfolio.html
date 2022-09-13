@@ -14,38 +14,39 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
         integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
     <!-- Шапка сайту -->
     <header class="section-header">
-        <div class="container main-header">
-            <nav class="main-nav">
+        <div class="container header-main">
+            <nav class="header-main-nav">
                 <a href="./index.html" class="logo-nav"> <span class="web">Web</span>Studio</a>
-                <ul class="site-navigation">
-                    <li class="item">
-                        <a href="./index.html" class="link">Студія</a>
+                <ul class="header-site-navigation">
+                    <li class="header-item">
+                        <a href="./index.html" class="header-link link">Студія</a>
                     </li>
-                    <li class="item">
-                        <a href="./portfolio.html" class="link current">Портфоліо</a>
+                    <li class="header-item">
+                        <a href="./portfolio.html" class="header-link link current">Портфоліо</a>
                     </li>
-                    <li class="item">
-                        <a href="" class="link">Контакти</a>
+                    <li class="header-item">
+                        <a href="" class="header-link link">Контакти</a>
                     </li>
                 </ul>
             </nav>
 
-            <ul class="contacts-navigation">
+            <ul class="header-contacts-navigation">
                 <li>
-                    <a href="mailto:info@devstudio.com" class="contacts link">
+                    <a href="mailto:info@devstudio.com" class="header-mail link">
                         <svg class="icon-envelope" width="16px" height="12px">
                             <use href="./images/icons.svg#icon-envelope"></use>
                         </svg>
                         info@devstudio.com</a>
                 </li>
                 <li>
-                    <a href="tel:+380961111111" class="contacts link">
+                    <a href="tel:+380961111111" class="header-tel link">
                         <svg class="icon-smartphone" width="10px" height="16px">
                             <use href="./images/icons.svg#icon-smartphone"></use>
                         </svg>
@@ -55,103 +56,113 @@
         </div>
     </header>
     <main>
-        <section class="examples">
+        <section class="section-examples">
             <div class="container">
                 <!-- Скритий заголовок -->
                 <h1 class="visually-hidden">Приклади робіт</h1>
-                <ul class="buttons-nav">
-                    <li class="buttons-item"><button type="button" class="btn-link current">Усі</button></li>
-                    <li class="buttons-item"><button type="button" class="btn-link">Веб-сайти</button></li>
-                    <li class="buttons-item"><button type="button" class="btn-link">Додатки</button></li>
-                    <li class="buttons-item"><button type="button" class="btn-link">Дизайн</button></li>
-                    <li class="buttons-item"><button type="button" class="btn-link">Маркетинг</button></li>
+                <ul class="examples-buttons-nav">
+                    <li class="examples-buttons">
+                        <button type="button" class="examples-btn-link current">Усі</button>
+                    </li>
+                    <li class="examples-buttons">
+                        <button type="button" class="examples-btn-link">Веб-сайти</button>
+                    </li>
+                    <li class="examples-buttons">
+                        <button type="button" class="examples-btn-link">Додатки</button>
+                    </li>
+                    <li class="examples-buttons">
+                        <button type="button" class="examples-btn-link">Дизайн</button>
+                    </li>
+                    <li class="examples-buttons">
+                        <button type="button" class="examples-btn-link">Маркетинг</button>
+                    </li>
                 </ul>
                 <ul class="portfolio">
-                    <li class="link-item shadow">
-                        <a href="" class="link">
+                    <li class="portfolio-item">
+                        <a href="" class="portfolio-link link">
                             <img src="./images/portfolio-1.jpeg" alt="Ноутбук з прикладом веб-сторінки" width="370"
                                 height="294">
-                            <div class="link-item-group">
+                            <div class="portfolio-item-info">
                                 <h2 class="project-title">Технокряк</h2>
                                 <p class="type">Веб-сайт</p>
                             </div>
                         </a>
                     </li>
-                    <li class="link-item">
-                        <a href="" class="link">
+                    <li class="portfolio-item">
+                        <a href="" class="portfolio-link link">
                             <img src="./images/portfolio-2.jpeg" alt="Два баскетболіста з баскетбольним м'ячем"
                                 width="370" height="294">
-                            <div class="link-item-group">
+                            <div class="portfolio-item-info">
                                 <h2 class="project-title">Постер <span lang="en">New Orlean vs Golden Star</span>
                                 </h2>
                                 <p class="type">Дизайн</p>
                             </div>
                         </a>
                     </li>
-                    <li class="link-item">
-                        <a href="" class="link">
+                    <li class="portfolio-item">
+                        <a href="" class="portfolio-link link">
                             <img src="./images/portfolio-3.jpeg" alt="Риба з надписом назви ресторану" width="370"
                                 height="294">
-                            <div class="link-item-group">
+                            <div class="portfolio-item-info">
                                 <h2 class="project-title">Ресторан <span lang="en">Seafood</span></h2>
                                 <p class="type">Додаток</p>
                             </div>
                         </a>
                     </li>
-                    <li class="link-item">
-                        <a href="" class="link">
+                    <li class="portfolio-item">
+                        <a href="" class="portfolio-link link">
                             <img src="./images/portfolio-4.jpeg" alt="Чорні бездротові навушники" width="370"
                                 height="294">
-                            <div class="link-item-group">
+                            <div class="portfolio-item-info">
                                 <h2 class="project-title">Проєкт <span lang="en">Prime</span></h2>
                                 <p class="type">Маркетинг</p>
                             </div>
                         </a>
                     </li>
-                    <li class="link-item">
-                        <a href="" class="link">
+                    <li class="portfolio-item">
+                        <a href="" class="portfolio-link link">
                             <img src="./images/portfolio-5.jpeg" alt="Біла і крафтова коробочки з надписами" width="370"
                                 height="294">
-                            <div class="link-item-group">
+                            <div class="portfolio-item-info">
                                 <h2 class="project-title">Проєкт <span lang="en">Boxes</span></h2>
                                 <p class="type">Додаток</p>
                             </div>
                         </a>
                     </li>
-                    <li class="link-item">
-                        <a href="" class="link">
+                    <li class="portfolio-item">
+                        <a href="" class="portfolio-link link">
                             <img src="./images/portfolio-6.jpeg" alt="Монітор Mac з відкритою сторінкою сайту"
                                 width="370" height="294">
-                            <div class="link-item-group">
+                            <div class="portfolio-item-info">
                                 <h2 class="project-title" lang="en">Inspiration has no Borders</h2>
                                 <p class="type">Веб-сайт</p>
                             </div>
                         </a>
                     </li>
-                    <li class="link-item">
-                        <a href="" class="link">
+                    <li class="portfolio-item">
+                        <a href="" class="portfolio-link link">
                             <img src="./images/portfolio-7.jpeg" alt="Відкритий журнал з фото і текстами" width="370"
                                 height="294">
-                            <div class="link-item-group">
+                            <div class="portfolio-item-info">
                                 <h2 class="project-title">Видання <span lang="en">Limited Edition</span></h2>
                                 <p class="type">Дизайн</p>
                             </div>
                         </a>
                     </li>
-                    <li class="link-item">
-                        <a href="" class="link">
+                    <li class="portfolio-item">
+                        <a href="" class="portfolio-link link">
                             <img src="./images/portfolio-8.jpeg" alt="Біла бірка з надписом" width="370" height="294">
-                            <div class="link-item-group">
+                            <div class="portfolio-item-info">
                                 <h2 class="project-title">Проєкт <span lang="en">LAB</span></h2>
                                 <p class="type">Маркетинг</p>
                             </div>
                         </a>
                     </li>
-                    <li class="link-item">
-                        <a href="" class="link">
+                    <li class="portfolio-item">
+                        <a href="" class="portfolio-link link">
                             <img src="./images/portfolio-9.jpeg" alt="Ноутбук з відкритою сторінкою сайту" width="370"
                                 height="294">
-                            <div class="link-item-group">
+                            <div class="portfolio-item-info">
                                 <h2 class="project-title" lang="en">Growing Business</h2>
                                 <p class="type">Додаток</p>
                             </div>
@@ -222,5 +233,11 @@
         </div>
     </footer>
 </body>
+
+<script src="./js/modal.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 
 </html>
