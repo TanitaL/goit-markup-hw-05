@@ -14,38 +14,39 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
         integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
     <!-- Шапка сайту -->
     <header class="section-header">
-        <div class="container main-header">
-            <nav class="main-nav">
+        <div class="container header-main">
+            <nav class="header-main-nav">
                 <a href="./index.html" class="logo-nav"> <span class="web">Web</span>Studio</a>
-                <ul class="site-navigation">
-                    <li class="item">
-                        <a href="./index.html" class="link current">Студія</a>
+                <ul class="header-site-navigation">
+                    <li class="header-item">
+                        <a href="./index.html" class="header-link link current">Студія</a>
                     </li>
-                    <li class="item">
-                        <a href="./portfolio.html" class="link">Портфоліо</a>
+                    <li class="header-item">
+                        <a href="./portfolio.html" class="header-link link">Портфоліо</a>
                     </li>
-                    <li class="item">
-                        <a href="" class="link">Контакти</a>
+                    <li class="header-item">
+                        <a href="" class="header-link link">Контакти</a>
                     </li>
                 </ul>
             </nav>
 
-            <ul class="contacts-navigation">
+            <ul class="header-contacts-navigation">
                 <li>
-                    <a href="mailto:info@devstudio.com" class="contacts link">
+                    <a href="mailto:info@devstudio.com" class="header-mail link">
                         <svg class="icon-envelope" width="16px" height="12px">
                             <use href="./images/icons.svg#icon-envelope"></use>
                         </svg>
                         info@devstudio.com</a>
                 </li>
                 <li>
-                    <a href="tel:+380961111111" class="contacts link">
+                    <a href="tel:+380961111111" class="header-tel link">
                         <svg class="icon-smartphone" width="10px" height="16px">
                             <use href="./images/icons.svg#icon-smartphone"></use>
                         </svg>
@@ -56,30 +57,54 @@
     </header>
     <main>
         <!-- Hero -->
-        <section class="hero">
+        <section class="section-hero">
             <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-            <button type="button" class="btn">Замовити послугу</button>
+            <button type="button" class="hero-btn">Замовити послугу</button>
         </section>
         <!-- Наші переваги -->
-        <section class="features">
+        <section class="section-features">
             <div class="container">
                 <!-- Скритий заголовок-->
                 <h2 class="visually-hidden">Наші переваги</h2>
-                <ul class="feature-list">
-                    <li class="feature-list-item icon-antenna">
-                        <h3 class="title">УВАГА ДО ДЕТАЛЕЙ</h3>
+                <ul class="features-list">
+                    <li class="features-list-item">
+                        <div class="features-list-decoration">
+                            <svg class="features-svg">
+                                <use href="./images/icons.svg#icon-antenna">
+                                </use>
+                            </svg>
+                        </div>
+                        <h3 class="features-title">УВАГА ДО ДЕТАЛЕЙ</h3>
                         <p>Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
                     </li>
-                    <li class="feature-list-item icon-clock">
-                        <h3 class="title">ПУНКТУАЛЬНІСТЬ</h3>
+                    <li class="features-list-item">
+                        <div class="features-list-decoration">
+                            <svg class="features-svg">
+                                <use href="./images/icons.svg#icon-clock">
+                                </use>
+                            </svg>
+                        </div>
+                        <h3 class="features-title">ПУНКТУАЛЬНІСТЬ</h3>
                         <p>Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
                     </li>
-                    <li class="feature-list-item icon-diagram">
-                        <h3 class="title">ПЛАНУВАННЯ</h3>
+                    <li class="features-list-item">
+                        <div class="features-list-decoration">
+                            <svg class="features-svg">
+                                <use href="./images/icons.svg#icon-diagram">
+                                </use>
+                            </svg>
+                        </div>
+                        <h3 class="features-title">ПЛАНУВАННЯ</h3>
                         <p>Так само консультація з широким активом значною мірою зумовлює.</p>
                     </li>
-                    <li class="feature-list-item icon-astronaut">
-                        <h3 class="title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+                    <li class="features-list-item">
+                        <div class="features-list-decoration">
+                            <svg class="features-svg">
+                                <use href="./images/icons.svg#icon-astronaut">
+                                </use>
+                            </svg>
+                        </div>
+                        <h3 class="features-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
                         <p>Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
                     </li>
                 </ul>
@@ -397,6 +422,17 @@
             </div>
         </div>
     </footer>
+    <div class="backdrop">
+        <div class="modal">
+            <button type="button" class="modal-close">X</button>
+        </div>
+    </div>
 </body>
+
+<script src="./js/modal.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 
 </html>
