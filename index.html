@@ -59,7 +59,7 @@
         <!-- Hero -->
         <section class="section-hero">
             <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-            <button type="button" class="hero-btn">Замовити послугу</button>
+            <button type="button" class="hero-btn" data-modal-open>Замовити послугу</button>
         </section>
         <!-- Наші переваги -->
         <section class="section-features">
@@ -118,14 +118,19 @@
                     <li class="work-list">
                         <img src="./images/what-we-are-doing-a-man-typing.jpeg" alt="Чоловік працює за клавіатурою"
                             width="370" height="294" />
+                        <p class="work-top-text">ДЕСКТОПНІ ДОДАТКИ</p>
                     </li>
                     <li class="work-list">
                         <img src="./images/what-we-are-doing-working-on-the-laptop.jpeg" alt="Жінка працює за ноутбуком"
                             width="370" height="294" />
+                        <p class="work-top-text">МОБІЛЬНІ ДОДАТКИ</p>
+
                     </li>
                     <li class="work-list">
                         <img src="./images/what-we-are-doing-working-on-the-tablet.jpeg" alt="Жінка працює з планшетом"
                             width="370" height="294" />
+                        <p class="work-top-text">ДИЗАЙНЕРСЬКІ РІШЕННЯ</p>
+
                     </li>
                 </ul>
             </div>
@@ -422,9 +427,51 @@
             </div>
         </div>
     </footer>
-    <div class="backdrop">
+
+    <!-- Модальне вікно -->
+    <div class="backdrop" data-modal>
         <div class="modal">
-            <button type="button" class="modal-close">X</button>
+            <button type="button" class="modal-close" data-modal-close>
+                <svg class="modal-svg" width="18px" height="18px">
+                    <use href="./images/icons.svg#icon-close-black-18dp">
+                    </use>
+                </svg>
+            </button>
+            <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
+            <form class="modal-form">
+                <div class="modal-field">
+                    <label for="user-name" class="modal-label">Ім'я
+                        <input type="text" name="user-name" class="modal-input" required minlength="2" id="user-name" />
+                    </label>
+                </div>
+                <div class="modal-field">
+                    <label for="user-tel" class="modal-label">Телефон
+                        <input type="tel" name="user-tel" class="modal-input" required id="user-tel">
+                    </label>
+                </div>
+                <div class="modal-field">
+                    <label for="user-email" class="modal-label">Пошта
+                        <input type="email" name="user-email" class="modal-input" required id="user-email">
+                    </label>
+                </div>
+                <div class="modal-field">
+                    <label for="user-comments" class="modal-label">Коментар
+                        <textarea name="user-comments" id="user-comments" class="modal-comments"
+                            placeholder="Введіть текст"></textarea>
+                    </label>
+                </div>
+
+                <!-- <div class="check-box-wrap"> -->
+                <fieldset class="check-box">
+                    <legend>Size</legend>
+                    <label for="user-check"></label>
+                    <input type="radio" id="user-check" name="user-check">
+                </fieldset>
+                <!-- </div> -->
+                <!-- <input type="checkbox" name="user-check" class="modal-input"> -->
+                <button type="submit" class="modal-button">Send</button>
+            </form>
+
         </div>
     </div>
 </body>
