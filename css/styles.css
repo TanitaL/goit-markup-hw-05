@@ -744,6 +744,12 @@ ul {
     height: 58px;
     margin-bottom: 10px;
 }
+modal-field-comments {
+    /* display: block; */
+    width: 448px;
+    height: 138px;
+    margin-bottom: 20px;
+}
 .modal-label {
     display: block;
     font-size: 12px;
@@ -783,12 +789,13 @@ ul {
     letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 0.5);
 }
-.check-box-wrap {
-    /* margin-top: 30px; */
-}
-/* .check-box {
-    margin-top: 20px;
+/* .check-box-wrap {
+    margin-top: 20px; 
 } */
+
+.check-box {
+    /* margin-top: 20px; */
+}
 
 .modal-button {
     width: 200px;
