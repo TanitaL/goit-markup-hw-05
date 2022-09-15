@@ -741,13 +741,13 @@ ul {
 /* .modal-form {} */
 .modal-field {
     width: 448px;
-    height: 58px;
+    /* height: 58px; */
     margin-bottom: 10px;
 }
 modal-field-comments {
-    /* display: block; */
-    width: 448px;
-    height: 138px;
+    display: block;
+    /* width: 448px; */
+    /* height: 138px; */
     margin-bottom: 20px;
 }
 .modal-label {
@@ -769,6 +769,7 @@ modal-field-comments {
 }
 
 .modal-comments {
+    display: block;
     width: 448px;
     height: 120px;
     background-color: transparent;
